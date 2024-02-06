@@ -36,52 +36,27 @@
         <span>Built with</span>
         <span>Link</span>
       </div>
-      <div class="project-table-data">
+
+      <div class="project-table-data" v-for="experience in experiences" :key="experience.project">
         <div>
-          <p>2023</p>
+          <p>{{ experience.year }}</p>
         </div>
 
         <div>
-          <p>Healthnow</p>
+          <p>{{ experience.project }}</p>
         </div>
 
         <div>
-          <p>React.js</p>
-          <p>Next.js</p>
-          <p>GraphQL</p>
-          <p>Node.js</p>
-          <p>MongoDB</p>
-          <p>Insomnia</p>
+          <p v-for="(techItem, index) in experience.tech" :key="index">{{ techItem }}</p>
         </div>
 
-        <div>
-          <a href="#">
+        <div v-if="experience.link">
+          <a target="_blank" :href="experience.link">
             <LinkIcon class="icon" />
           </a>
         </div>
-      </div>
 
-      <div class="project-table-data">
-        <div>
-          <p>2023</p>
-        </div>
-
-        <div>
-          <p>LoadUp</p>
-        </div>
-
-        <div>
-          <p>Vue.js</p>
-          <p>BootstrapVue</p>
-          <p>Nuxt.js</p>
-          <p>Node.js</p>
-        </div>
-
-        <div>
-          <a href="#">
-            <LinkIcon class="icon" />
-          </a>
-        </div>
+        <div v-else></div>
       </div>
     </div>
 
@@ -117,11 +92,76 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import LinkIcon from '../assets/icons/external-link-alt.vue'
 import LocationIcon from '../assets/icons/map-marker-alt.vue'
 import PhoneIcon from '../assets/icons/phone.vue'
 import EnvelopeIcon from '../assets/icons/envelope.vue'
+
+export default {
+  components: {
+    LinkIcon,
+    LocationIcon,
+    PhoneIcon,
+    EnvelopeIcon
+  },
+  data() {
+    return {
+      experiences: [
+        {
+          year: '2023',
+          project: 'HealthNow',
+          tech: ['React.js', 'Next.js', 'GraphQL', 'Node.js', 'MongoDB', 'Insomnia'],
+          link: 'https://www.healthnow.ph/'
+        },
+        {
+          year: '2023',
+          project: 'LoadUp',
+          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman'],
+          link: 'https://loadup.com.ph/home'
+        },
+        {
+          year: '2023',
+          project: 'GoCloud',
+          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman']
+        },
+        {
+          year: '2022',
+          project: 'GoWIFI',
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+        },
+        {
+          year: '2022',
+          project: 'TMBayan',
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+        },
+        {
+          year: '2022',
+          project: 'KonekTayo',
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+        },
+        {
+          year: '2022',
+          project: 'LCC',
+          tech: ['Vue.js', 'Nuxt.js', 'Vuetify', 'Vessell CMS'],
+          link: 'https://www.shoplcc.com.ph/'
+        },
+        {
+          year: '2021',
+          project: 'Vessell',
+          tech: ['Vue.js', 'Nuxt.js', 'Vuetify', 'Postman'],
+          link: 'https://www.vessell.ph/'
+        },
+        {
+          year: '2021',
+          project: 'Rex E-Store',
+          tech: ['Vue.js', 'Nuxt.js', 'Vuetify', 'Postman'],
+          link: 'https://estore.rex.com.ph/'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -129,12 +169,10 @@ import EnvelopeIcon from '../assets/icons/envelope.vue'
   color: #5ae0d3;
 }
 .about-container {
-  // border: 1px solid aqua;
   width: 50vw;
   padding: 5%;
   margin-bottom: 30px;
   &__item {
-    // border: 1px solid aqua;
     p {
       margin: 20px 0;
       color: #fff;

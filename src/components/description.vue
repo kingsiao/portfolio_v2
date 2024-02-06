@@ -4,10 +4,14 @@
       <p class="name-text">King Solomon Siao</p>
       <p class="job-text">Software Engineer at <span class="company-text">Yondu Inc.</span></p>
       <div>
-        <a href="#"><FacebookIcon class="icon" /></a>
-        <a href="#"><GithubIcon class="icon" /></a>
-        <a href="#"><LinkedInIcon class="icon" /></a>
-        <a href="#"><InstagramIcon class="icon" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100008348959213"
+          ><FacebookIcon class="icon"
+        /></a>
+        <a href="https://github.com/kingsiao"><GithubIcon class="icon" /></a>
+        <a href="https://www.linkedin.com/in/king-solomon-siao-678370176/"
+          ><LinkedInIcon class="icon"
+        /></a>
+        <a href="https://www.instagram.com/kingsiao/"><InstagramIcon class="icon" /></a>
       </div>
     </div>
   </div>
@@ -22,7 +26,6 @@ import GithubIcon from '../assets/icons/github.vue'
 
 <style scoped lang="scss">
 .desc-container {
-  // border: 1px solid aqua;
   width: 50vw;
   display: flex;
   align-items: center;
@@ -75,15 +78,4 @@ import GithubIcon from '../assets/icons/github.vue'
     }
   }
 }
-
-// @media (min-width: 401px) and (max-width: 870px) {
-//   .desc-container {
-//     width: 100vw !important;
-//     display: flex;
-//     flex-direction: row !important;
-//     &__item {
-//       position: absolute;
-//     }
-//   }
-// }
 </style>
