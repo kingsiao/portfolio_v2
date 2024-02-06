@@ -137,6 +137,7 @@ import EnvelopeIcon from '../assets/icons/envelope.vue'
     // border: 1px solid aqua;
     p {
       margin: 20px 0;
+      color: #fff;
       font-size: 18px;
     }
     & .headline {
