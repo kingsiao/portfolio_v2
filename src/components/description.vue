@@ -17,11 +17,20 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import LinkedInIcon from '../assets/icons/linkedin.vue'
 import FacebookIcon from '../assets/icons/facebook.vue'
 import InstagramIcon from '../assets/icons/instagram-alt.vue'
 import GithubIcon from '../assets/icons/github.vue'
+
+export default {
+  components: {
+    LinkedInIcon,
+    FacebookIcon,
+    InstagramIcon,
+    GithubIcon
+  }
+}
 </script>
 
 <style scoped lang="scss">

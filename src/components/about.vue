@@ -111,34 +111,34 @@ export default {
         {
           year: '2023',
           project: 'HealthNow',
-          tech: ['React.js', 'Next.js', 'GraphQL', 'Node.js', 'MongoDB', 'Insomnia'],
+          tech: ['React.js', 'Next.js', 'GraphQL', 'Node.js', 'MongoDB', 'Insomnia', 'AWS'],
           link: 'https://www.healthnow.ph/'
         },
         {
           year: '2023',
           project: 'LoadUp',
-          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman'],
+          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman', 'AWS'],
           link: 'https://loadup.com.ph/home'
         },
         {
           year: '2023',
           project: 'GoCloud',
-          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman']
+          tech: ['Vue.js', 'BootstrapVue', 'Nuxt.js', 'Postman', 'AWS']
         },
         {
           year: '2022',
           project: 'GoWIFI',
-          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman', 'AWS']
         },
         {
           year: '2022',
           project: 'TMBayan',
-          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman', 'AWS']
         },
         {
           year: '2022',
           project: 'KonekTayo',
-          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman']
+          tech: ['Vue.js', 'JQuery', 'Vuetify', 'Postman', 'AWS']
         },
         {
           year: '2022',
