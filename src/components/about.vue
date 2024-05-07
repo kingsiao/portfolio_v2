@@ -60,9 +60,9 @@
       </div>
     </div>
 
-    <div class="border-line"></div>
+    <!-- <div class="border-line"></div> -->
 
-    <div class="about-container__item">
+    <!-- <div class="about-container__item">
       <h1 class="headline">Get In Touch</h1>
 
       <div class="personal-details-container">
@@ -88,7 +88,7 @@
           <span>09973900735</span>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
